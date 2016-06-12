@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.coolstar.linearbubbletest.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/bottompanel"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:background="#7FFFFFFF"
+        android:layout_height="45dp">
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发送"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etInput"
+            android:layout_toLeftOf="@id/btnAdd"
+            android:layout_alignParentBottom="true" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/danmakulayout"
+        android:orientation="vertical"
+        android:background="#7F000000"
+        android:gravity="bottom"
+        android:layout_above="@id/bottompanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>
